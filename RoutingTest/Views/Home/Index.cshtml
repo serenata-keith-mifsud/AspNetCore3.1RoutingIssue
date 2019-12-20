@@ -1,0 +1,23 @@
+﻿@using Microsoft.AspNetCore.Http;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h3>We're on @Context.GetEndpoint().DisplayName</h3>
+    <ul>
+        <li><a href="/">Homepage</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li style="color:red;"><a href="/blog/post">Blog Post</a></li>
+        <li><a href="/hello">Hello Ajax Call</a></li>
+        <li><a href="/a/b">Double Constraint</a></li>
+    </ul>
+</body>
+</html>
